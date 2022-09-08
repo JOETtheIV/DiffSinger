@@ -1,4 +1,8 @@
 import torch
+import sys
+import os
+py_file_location = "/content/DiffSinger"
+sys.path.append(os.path.abspath(py_file_location))
 # from inference.tts.fs import FastSpeechInfer
 # from modules.tts.fs2_orig import FastSpeech2Orig
 from inference.svs.base_svs_infer import BaseSVSInfer
