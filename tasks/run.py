@@ -1,4 +1,8 @@
 import importlib
+import os
+import sys
+py_file_location = "/content/DiffSinger"
+sys.path.append(os.path.abspath(py_file_location))
 from utils.hparams import set_hparams, hparams
 
 
