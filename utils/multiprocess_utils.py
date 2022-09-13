@@ -20,8 +20,8 @@ def chunked_multiprocess_run(map_func, args, num_workers=None, ordered=True, ini
     args = zip(range(len(args)), args)
     args = list(args)
     n_jobs = len(args)
-    if num_workers is None:
-        num_workers = int(os.getenv('N_PROC', os.cpu_count()))
+    
+    num_workers = int(os.cpu_count())
     results_queues = []
     if ordered:
         for i in range(num_workers):
