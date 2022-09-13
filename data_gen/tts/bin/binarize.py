@@ -1,5 +1,7 @@
 import os
-
+import sys
+py_file_location = "/content/DiffSinger"
+sys.path.append(os.path.abspath(py_file_location))
 os.environ["OMP_NUM_THREADS"] = "1"
 
 import importlib
